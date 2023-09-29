@@ -5,25 +5,35 @@ import (
 	"runtime"
 )
 
+func main() {
+	slices()
+}
+
 func slices() {
 	s := getSubSlice()
 	printMemStat()
-	runtime.GC()
+
+	all := make([][]int, 0)
+	all = append(all, s)
+
 	for i := 1; i < 10; i++ {
 		s2 := getSubSlice()
 		runtime.GC()
 		printMemStat()
-		fmt.Println(s2)
+
+		all = append(all, s2)
 	}
-	fmt.Println(s)
+
 	runtime.GC()
 	printMemStat()
+
+	fmt.Println(all)
 }
 
 func getSubSlice() []int {
 	s := make([]int, 1_000_000)
 
-	return s[999_998:]
+	return s[999_999:]
 }
 
 func printMemStat() {

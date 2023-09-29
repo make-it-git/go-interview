@@ -80,6 +80,7 @@ func (c *Consumer) ConsumeDriver(ctx context.Context, points []Point) {
 }
 
 func (c *Consumer) GetDemand(ctx context.Context, point Point) float64 {
+	// TODO
 	riders := 123
 	drivers := 50
 	return float64(riders) / float64(drivers)

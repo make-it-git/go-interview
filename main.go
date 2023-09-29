@@ -1,18 +1,19 @@
 package main
 
 func main() {
-	// runes
+	// 1. defer
 
-	// slice memory leak
-	slices()
+	// 2. runes
 
-	// rate limiter
+	// 3. slice memory leak
 
-	// time after (leak running timer)
+	// 4. rate limiter
+
+	// 5. time after (leak running timer)
 
 	// send to all websocket connections
 
-	// outbox (notify caller, antifraud, withdraw limit)
+	// outbox (notify caller, antifraud, withdraw limit, idempotency)
 
 	// taxi card demand
 }
