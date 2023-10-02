@@ -1,4 +1,4 @@
-package main
+package taxi_demand
 
 import (
 	"context"

@@ -1,4 +1,4 @@
-package main
+package websocket_example
 
 type Message struct {
 	UserID  int

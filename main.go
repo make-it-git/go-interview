@@ -11,9 +11,9 @@ func main() {
 
 	// 5. time after (leak running timer)
 
-	// send to all websocket connections
+	// 6. send to all websocket connections
 
-	// outbox (notify caller, antifraud, withdraw limit, idempotency)
+	// 7. outbox (notify caller, antifraud, withdraw limit, idempotency)
 
-	// taxi card demand
+	// 8. taxi card demand
 }
